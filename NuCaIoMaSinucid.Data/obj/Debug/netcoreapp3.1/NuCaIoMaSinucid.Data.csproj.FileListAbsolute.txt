@@ -1,0 +1,12 @@
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\bin\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.deps.json
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\bin\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.dll
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.csprojAssemblyReference.cache
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.AssemblyInfoInputs.cache
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.AssemblyInfo.cs
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\bin\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.runtimeconfig.json
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\bin\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.runtimeconfig.dev.json
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.genruntimeconfig.cache
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.csproj.CoreCompileInputs.cache
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\bin\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.pdb
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.dll
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Data.pdb

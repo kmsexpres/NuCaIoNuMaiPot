@@ -1,0 +1,208 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj": {}
+  },
+  "projects": {
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
+        "projectName": "NuCaIoMaSinucid.Business",
+        "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
+        "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
+                "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+        "projectName": "NuCaIoMaSinucid.Data",
+        "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+        "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
+        "projectName": "NuCaIoMaSinucid",
+        "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
+        "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
+                "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
