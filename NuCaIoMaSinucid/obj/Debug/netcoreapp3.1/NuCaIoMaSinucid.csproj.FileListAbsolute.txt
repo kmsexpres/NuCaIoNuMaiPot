@@ -57,3 +57,5 @@ D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\bin\Debug\netcoreapp3.1\Micro
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.csproj.CoreCompileInputs.cache
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.UI.EcranInsertCartiNoi.resources
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.Properties.Resources.resources
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.UI.EcranListaClienti.resources
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.UI.ecranClientNou.resources

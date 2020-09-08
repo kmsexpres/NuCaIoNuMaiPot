@@ -52,7 +52,7 @@ namespace NuCaIoMaSinucid
                 foreach (var carte in query)
                 {
                     this.cutieListaCarti.Items
-                        .Add($"{carte.ID}. {carte.Titlu}, {carte.Autor}");
+                        .Add($"{carte.ID}. '{carte.Titlu}' de {carte.Autor}");
                 }
 
                 unit.Complete();
@@ -110,6 +110,18 @@ namespace NuCaIoMaSinucid
 
                 unit.Complete();
             }
+        }
+
+        private void butInsertClient_Click(object sender, EventArgs e)
+        {
+            var ecranClienti = new EcranListaClienti(true);
+            ecranClienti.Show();     
+        }
+
+        private void butEcranClienti_Click(object sender, EventArgs e)
+        {
+            var ecranClienti = new EcranListaClienti();
+            ecranClienti.Show();
         }
     }
 }

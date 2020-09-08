@@ -45,20 +45,21 @@ namespace NuCaIoMaSinucid
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.butEcranClienti = new System.Windows.Forms.Button();
             this.butRefresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cutieListaCarti
             // 
-            this.cutieListaCarti.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cutieListaCarti.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cutieListaCarti.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cutieListaCarti.FormattingEnabled = true;
             this.cutieListaCarti.ItemHeight = 28;
             this.cutieListaCarti.Location = new System.Drawing.Point(12, 54);
             this.cutieListaCarti.Name = "cutieListaCarti";
-            this.cutieListaCarti.Size = new System.Drawing.Size(813, 200);
+            this.cutieListaCarti.Size = new System.Drawing.Size(813, 256);
             this.cutieListaCarti.TabIndex = 0;
             this.cutieListaCarti.SelectedIndexChanged += new System.EventHandler(this.cutieListaCarti_SelectedIndexChanged);
             // 
@@ -74,16 +75,15 @@ namespace NuCaIoMaSinucid
             // 
             // boxInfoCarte
             // 
-            this.boxInfoCarte.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.boxInfoCarte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.boxInfoCarte.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.boxInfoCarte.Location = new System.Drawing.Point(12, 310);
+            this.boxInfoCarte.Location = new System.Drawing.Point(12, 360);
             this.boxInfoCarte.Multiline = true;
             this.boxInfoCarte.Name = "boxInfoCarte";
             this.boxInfoCarte.PlaceholderText = "Selectati o carte mai intai";
             this.boxInfoCarte.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.boxInfoCarte.Size = new System.Drawing.Size(813, 208);
+            this.boxInfoCarte.Size = new System.Drawing.Size(815, 208);
             this.boxInfoCarte.TabIndex = 2;
             // 
             // label2
@@ -91,7 +91,7 @@ namespace NuCaIoMaSinucid
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 279);
+            this.label2.Location = new System.Drawing.Point(12, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(299, 28);
             this.label2.TabIndex = 3;
@@ -113,18 +113,19 @@ namespace NuCaIoMaSinucid
             // 
             this.butInsertClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.butInsertClient.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.butInsertClient.Location = new System.Drawing.Point(12, 542);
+            this.butInsertClient.Location = new System.Drawing.Point(12, 592);
             this.butInsertClient.Name = "butInsertClient";
             this.butInsertClient.Size = new System.Drawing.Size(157, 44);
             this.butInsertClient.TabIndex = 5;
             this.butInsertClient.Text = "Client nou";
             this.butInsertClient.UseVisualStyleBackColor = true;
+            this.butInsertClient.Click += new System.EventHandler(this.butInsertClient_Click);
             // 
             // butImprumutaCarte
             // 
             this.butImprumutaCarte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.butImprumutaCarte.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.butImprumutaCarte.Location = new System.Drawing.Point(537, 542);
+            this.butImprumutaCarte.Location = new System.Drawing.Point(537, 592);
             this.butImprumutaCarte.Name = "butImprumutaCarte";
             this.butImprumutaCarte.Size = new System.Drawing.Size(288, 44);
             this.butImprumutaCarte.TabIndex = 6;
@@ -176,24 +177,25 @@ namespace NuCaIoMaSinucid
             this.radioButton4.Text = "Intarziate";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // butEcranClienti
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(175, 542);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 44);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Clienti";
-            this.button1.UseVisualStyleBackColor = true;
+            this.butEcranClienti.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.butEcranClienti.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.butEcranClienti.Location = new System.Drawing.Point(175, 592);
+            this.butEcranClienti.Name = "butEcranClienti";
+            this.butEcranClienti.Size = new System.Drawing.Size(150, 44);
+            this.butEcranClienti.TabIndex = 11;
+            this.butEcranClienti.Text = "Clienti";
+            this.butEcranClienti.UseVisualStyleBackColor = true;
+            this.butEcranClienti.Click += new System.EventHandler(this.butEcranClienti_Click);
             // 
             // butRefresh
             // 
             this.butRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.butRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.butRefresh.Location = new System.Drawing.Point(567, 12);
+            this.butRefresh.Location = new System.Drawing.Point(781, 54);
             this.butRefresh.Name = "butRefresh";
-            this.butRefresh.Size = new System.Drawing.Size(53, 39);
+            this.butRefresh.Size = new System.Drawing.Size(44, 39);
             this.butRefresh.TabIndex = 12;
             this.butRefresh.Text = "R";
             this.butRefresh.UseVisualStyleBackColor = true;
@@ -203,9 +205,9 @@ namespace NuCaIoMaSinucid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 598);
+            this.ClientSize = new System.Drawing.Size(837, 648);
             this.Controls.Add(this.butRefresh);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.butEcranClienti);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -217,7 +219,7 @@ namespace NuCaIoMaSinucid
             this.Controls.Add(this.boxInfoCarte);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cutieListaCarti);
-            this.MinimumSize = new System.Drawing.Size(855, 645);
+            this.MinimumSize = new System.Drawing.Size(855, 695);
             this.Name = "Form1";
             this.Text = "Lista Carti";
             this.ResumeLayout(false);
@@ -238,7 +240,7 @@ namespace NuCaIoMaSinucid
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button butEcranClienti;
         private Button butRefresh;
     }
 }
