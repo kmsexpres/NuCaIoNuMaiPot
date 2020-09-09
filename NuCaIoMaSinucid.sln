@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuCaIoMaSinucid", "NuCaIoMaSinucid\NuCaIoMaSinucid.csproj", "{81F1B28F-11C1-4819-A08F-3C83617F9054}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuCaIoMaSinucid", "NuCaIoMaSinucid\NuCaIoMaSinucid.csproj", "{81F1B28F-11C1-4819-A08F-3C83617F9054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuCaIoMaSinucid.Data", "NuCaIoMaSinucid.Data\NuCaIoMaSinucid.Data.csproj", "{D956F2D3-3F0C-439A-8414-55C858A4FF3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuCaIoMaSinucid.Data", "NuCaIoMaSinucid.Data\NuCaIoMaSinucid.Data.csproj", "{D956F2D3-3F0C-439A-8414-55C858A4FF3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuCaIoMaSinucid.Business", "NuCaIoMaSinucid.Business\NuCaIoMaSinucid.Business.csproj", "{606BFE2B-27A9-456E-976A-5B42E77DC876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuCaIoMaSinucid.Business", "NuCaIoMaSinucid.Business\NuCaIoMaSinucid.Business.csproj", "{606BFE2B-27A9-456E-976A-5B42E77DC876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5FDC089D-60AF-4426-8842-6CE7BBA610C5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

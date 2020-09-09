@@ -34,7 +34,7 @@ namespace NuCaIoMaSinucid.Data.Entities.NewFolder
 
         public IEnumerable<T> GetAll()
         {
-            return this.entities.ToList();
+            return this.entities;
         }
 
         public T GetById(int ID)
@@ -51,6 +51,11 @@ namespace NuCaIoMaSinucid.Data.Entities.NewFolder
         public void RemoveRange(IEnumerable<T> entities)
         {
             this.entities.RemoveRange(entities);
+        }
+
+        public void Update(T entity)
+        {
+            this.entities.Update(entity);
         }
     }
 }

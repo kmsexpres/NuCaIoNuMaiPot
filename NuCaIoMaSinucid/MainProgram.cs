@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using NuCaIoMaSinucid.Business.UnitOfWorkLogic;
+using NuCaIoMaSinucid.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +17,28 @@ namespace NuCaIoMaSinucid
         [STAThread]
         static void Main()
         {
+            // am un singur context pe toata durata rularii aplicatiei
+            // nu construiesc mai multe incontinuu
+            DataContext context = new DataContext();
+
+            // construiesc baza de date in caz ca nu exista
+            context.Database.Migrate();
+
+            //imediat cum am generat-o fac un fake-client al bibliotecii
+            if (!context.Clienti.Select(c => c.ID).Any())
+            {
+                // daca e goala lista de clienti, generez asta
+                context.Clienti
+                    .Add(new Data.Entities.Client("Biblioteca", "Ion Ionescu de la Brad",
+                    "0233725665", "Str.Alexandru Cel Bun, nr.115, cod.617245"));
+                context.SaveChanges();
+            }
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form1(new UnitOfWork(context)));
         }
+
     }
 }

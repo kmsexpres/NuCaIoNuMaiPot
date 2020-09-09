@@ -5721,23 +5721,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bobel\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bogdan.toderica\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+      "projectUniqueName": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
       "projectName": "NuCaIoMaSinucid.Data",
-      "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
-      "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
-      "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\obj\\",
+      "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+      "packagesPath": "C:\\Users\\bogdan.toderica\\.nuget\\packages\\",
+      "outputPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bogdan.toderica\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -13,28 +13,42 @@ namespace NuCaIoMaSinucid.UI
 {
     public partial class ecranClientNou : Form
     {
-        public ecranClientNou()
+        private readonly UnitOfWork unit;
+
+        private ecranClientNou()
         {
             InitializeComponent();
+        }
+
+        public ecranClientNou(UnitOfWork unit) : this()
+        {
+            this.unit = unit;
         }
 
         private void butAdaugaClient_Click(object sender, EventArgs e)
         {
             // iau datele din casute si le trimit in baza de date
-
             var nume = this.boxNume.Text;
+            this.boxNume.Text = string.Empty;
+
             var prenume = this.boxPrenume.Text;
+            this.boxPrenume.Text = string.Empty;
+
             var tel = this.boxTelefon.Text;
+            this.boxTelefon.Text = string.Empty;
+
             var adresa = this.boxAdresa.Text;
+            this.boxAdresa.Text = string.Empty;
 
-            using(var unit = new UnitOfWork(new DataContext()))
-            {
-                var newClient = new Client(nume, prenume, tel, adresa);
+            var newClient = new Client(nume, prenume, tel, adresa);
 
-                unit.Clients.Add(newClient);
+            unit.Clients.Add(newClient);
+            unit.Complete();
+        }
 
-                unit.Complete();
-            }
+        private void butInapoi_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
