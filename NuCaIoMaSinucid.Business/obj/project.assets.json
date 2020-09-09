@@ -5669,23 +5669,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bobel\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bogdan.toderica\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
+      "projectUniqueName": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
       "projectName": "NuCaIoMaSinucid.Business",
-      "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
-      "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
-      "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\obj\\",
+      "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
+      "packagesPath": "C:\\Users\\bogdan.toderica\\.nuget\\packages\\",
+      "outputPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bogdan.toderica\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5698,8 +5694,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
-              "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj"
+            "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
+              "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj"
             }
           }
         }

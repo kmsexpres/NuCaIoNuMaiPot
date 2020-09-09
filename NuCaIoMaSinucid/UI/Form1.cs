@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NuCaIoMaSinucid.Business.UnitOfWorkLogic;
 using NuCaIoMaSinucid.Data;
+using NuCaIoMaSinucid.Data.Entities;
 using NuCaIoMaSinucid.UI;
 using System;
 using System.Collections.Generic;
@@ -16,9 +17,32 @@ namespace NuCaIoMaSinucid
 {
     public partial class Form1 : Form
     {
+        private readonly UnitOfWork unit;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public Form1(UnitOfWork unitOfWork) : this()
+        {
+            // folosesc un worker ca sa separ form-ul de baza de date cat mai mult
+            // si folosesc doar 1, nu generez altii pe parcurs
+            this.unit = unitOfWork;
+        }
+
+
+        private void umpleCutieListaCartiCu(IEnumerable<Book> lista)
+        {
+            // functia goleste cutia si scrie ce i-am trimis
+
+            this.cutieListaCarti.Items.Clear();
+
+            foreach (var carte in lista)
+            {
+                this.cutieListaCarti.Items
+                    .Add($"{carte.ID}. '{carte.Titlu}' de {carte.Autor}");
+            }
         }
 
         protected override void OnLoad(EventArgs e)
@@ -26,102 +50,105 @@ namespace NuCaIoMaSinucid
             // cand se incarca aplicatia iau toate datele din 
             // BD carti si le afisez in boxListaCarti
 
-            // de asemenea aicea generez baza de date in caz ca nu exista deja
-            // nu cred ca e indicat tho dar asta ie
+            var query = unit.Books.GetAll().ToList();
+            unit.Complete();
 
-            using (DataContext context = new DataContext())
-            {
-                // construiesc baza de date in caz ca nu exista
-                context.Database.Migrate();
-
-                //imediat cum am generat-o fac un fake-client al bibliotecii
-                if(!context.Clienti.Select(c => c.ID).Any())
-                {
-                    // daca e goala lista de clienti, generez asta
-                    context.Clienti
-                        .Add(new Data.Entities.Client("Biblioteca", "Ion Ionescu de la Brad", 
-                        "0233725665", "Str.Alexandru Cel Bun, nr.115, cod.617245"));
-                    context.SaveChanges();
-                }
-            }
-
-            using (UnitOfWork unit = new UnitOfWork(new Data.DataContext()))
-            {
-                var query = unit.Books.GetAll();
-
-                foreach (var carte in query)
-                {
-                    this.cutieListaCarti.Items
-                        .Add($"{carte.ID}. '{carte.Titlu}' de {carte.Autor}");
-                }
-
-                unit.Complete();
-            }
+            umpleCutieListaCartiCu(query);
         }
 
         private void cutieListaCarti_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // citesc stringu afisat ca sa aflu ce carte iau din bd
             var item = this.cutieListaCarti.SelectedItem.ToString();
-
             var bookID = int.Parse(item.Replace(".", "").Split(" ")[0]);
-            
-            using(var unit = new UnitOfWork(new DataContext()))
-            {
-                var carte = unit.Books.GetById(bookID);
-                carte.Client = unit.Clients.GetById(carte.ClientID);
 
-                string temp = String.Empty;
-                if (carte.Client.Nume.ToLower() != "biblioteca")
-                    temp = $"A fost predata la {carte.DataImprumut} si trebuie returnata pana la {carte.DataReturnare}" + Environment.NewLine;
+            // iau datele
+            var carte = unit.Books.GetById(bookID);
+            carte.Client = unit.Clients.GetById(carte.ClientID);
+            unit.Complete();
 
-                this.boxInfoCarte.Text =
-                    $"ID = {bookID}" + Environment.NewLine +
-                    $"Titlu = {carte.Titlu}" + Environment.NewLine +
-                    $"Autor = {carte.Autor}" + Environment.NewLine +
-                    $"Se afla la {carte.Client.Nume} {carte.Client.Prenume}" + Environment.NewLine +
-                    $"{temp}" +
-                    $"Detalii despre carte:" + Environment.NewLine + $"{carte.Detalii}";
+            // le afisez in cutia de jos
+            string temp = String.Empty;
+            if (carte.Client.Nume.ToLower() != "biblioteca")
+                temp = $"A fost data la {carte.DataImprumut} si trebuie returnata pana la {carte.DataReturnare}" + Environment.NewLine;
 
-                unit.Complete();
-            }
-
+            this.boxInfoCarte.Text =
+                $"ID = {bookID}" + Environment.NewLine +
+                $"Titlu = {carte.Titlu}" + Environment.NewLine +
+                $"Autor = {carte.Autor}" + Environment.NewLine +
+                $"Se afla la {carte.Client.Nume} {carte.Client.Prenume}" + Environment.NewLine +
+                $"{temp}" +
+                $"Detalii despre carte:" + Environment.NewLine + $"{carte.Detalii}";
         }
 
         private void butInsertCarte_Click(object sender, EventArgs e)
         {
             // se deschide meniul de adaugat carte noua
-            var ecranInsertCarte = new EcranInsertCartiNoi();
+            var ecranInsertCarte = new EcranInsertCartiNoi(unit);
             ecranInsertCarte.Show();
         }
 
         private void butRefresh_Click(object sender, EventArgs e)
         {
-            this.cutieListaCarti.Items.Clear();
+            var query = unit.Books.GetAll().ToList();
+            unit.Complete();
 
-            using (UnitOfWork unit = new UnitOfWork(new DataContext()))
-            {
-                var query = unit.Books.GetAll();
-
-                foreach (var carte in query)
-                {
-                    this.cutieListaCarti.Items
-                        .Add($"{carte.ID}. {carte.Titlu}, {carte.Autor}");
-                }
-
-                unit.Complete();
-            }
+            umpleCutieListaCartiCu(query);
         }
 
         private void butInsertClient_Click(object sender, EventArgs e)
         {
-            var ecranClienti = new EcranListaClienti(true);
-            ecranClienti.Show();     
+            var ecranClienti = new EcranListaClienti(unit, true);
+            ecranClienti.Show();
         }
 
         private void butEcranClienti_Click(object sender, EventArgs e)
         {
-            var ecranClienti = new EcranListaClienti();
+            var ecranClienti = new EcranListaClienti(unit);
             ecranClienti.Show();
+        }
+
+        private void radButToate_CheckedChanged(object sender, EventArgs e)
+        {
+            // sterg lista si umplu cu toate cartile
+
+            var listaCarti = unit.Books.GetAll().ToList();
+            unit.Complete();
+
+            umpleCutieListaCartiCu(listaCarti);
+        }
+
+        private void radButLibere_CheckedChanged(object sender, EventArgs e)
+        {
+            // golesc lista si pun cartile neimprumutate
+
+            var listaCartiLibere = unit.Books.GetAll().Where(carte => carte.EsteImprumutata == false).ToList();
+            unit.Complete();
+
+            umpleCutieListaCartiCu(listaCartiLibere);
+        }
+
+        private void radButImprum_CheckedChanged(object sender, EventArgs e)
+        {
+            // cu alea imprumutate
+
+            var listaCartiOcupate = unit.Books.GetAll().Where(carte => carte.EsteImprumutata == true).ToList();
+            unit.Complete();
+
+            umpleCutieListaCartiCu(listaCartiOcupate);
+        }
+
+        private void radButIntarziate_CheckedChanged(object sender, EventArgs e)
+        {
+            // cu alea intarziate
+
+            var listaIntarziate = unit.Books.GetAll()
+                .Where(carte => carte.EsteImprumutata == true)
+                .Where(carte => carte.DataReturnare < DateTime.Now) // s-a depasit data de returnare
+                .ToList();
+            unit.Complete();
+
+            umpleCutieListaCartiCu(listaIntarziate);
         }
     }
 }

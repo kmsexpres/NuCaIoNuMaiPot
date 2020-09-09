@@ -23,11 +23,18 @@ namespace NuCaIoMaSinucid.UI
             // iau datele din casute si le trimit in baza de date
 
             var nume = this.boxNume.Text;
-            var prenume = this.boxPrenume.Text;
-            var tel = this.boxTelefon.Text;
-            var adresa = this.boxAdresa.Text;
+            this.boxNume.Text = string.Empty;
 
-            using(var unit = new UnitOfWork(new DataContext()))
+            var prenume = this.boxPrenume.Text;
+            this.boxPrenume.Text = string.Empty;
+
+            var tel = this.boxTelefon.Text;
+            this.boxTelefon.Text = string.Empty;
+
+            var adresa = this.boxAdresa.Text;
+            this.boxAdresa.Text = string.Empty;
+
+            using (var unit = new UnitOfWork(new DataContext()))
             {
                 var newClient = new Client(nume, prenume, tel, adresa);
 
@@ -35,6 +42,11 @@ namespace NuCaIoMaSinucid.UI
 
                 unit.Complete();
             }
+        }
+
+        private void butInapoi_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

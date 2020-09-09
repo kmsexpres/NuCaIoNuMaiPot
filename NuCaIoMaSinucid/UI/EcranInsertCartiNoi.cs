@@ -13,14 +13,20 @@ namespace NuCaIoMaSinucid.UI
 {
     public partial class EcranInsertCartiNoi : Form
     {
-        public EcranInsertCartiNoi()
+        private readonly UnitOfWork unit;
+
+        private EcranInsertCartiNoi()
         {
             InitializeComponent();
         }
 
+        public EcranInsertCartiNoi(UnitOfWork unit) : this()
+        {
+            this.unit = unit;
+        }
+
         private void EcranInsertCartiNoi_Load(object sender, EventArgs e)
         {
-
         }
 
         private void butFinishBook_Click(object sender, EventArgs e)
@@ -45,19 +51,18 @@ namespace NuCaIoMaSinucid.UI
             var dataImprumut = DateTime.MaxValue;
             var dataReturnare = DateTime.MinValue;
 
-            using(var unit = new UnitOfWork(new DataContext()))
-            {
-                var newBook = new Book(ID, titlu, autor, detalii);
-                newBook.EsteImprumutata = esteImprumutata;
-                newBook.DataImprumut = dataImprumut;
-                newBook.DataReturnare = dataReturnare;
-                newBook.Client = unit.Clients.GetById(1);
-                newBook.ClientID = newBook.Client.ID;
 
-                unit.Books.Add(newBook);
+            var newBook = new Book(ID, titlu, autor, detalii);
+            newBook.EsteImprumutata = esteImprumutata;
+            newBook.DataImprumut = dataImprumut;
+            newBook.DataReturnare = dataReturnare;
+            newBook.Client = unit.Clients.GetById(1);
+            newBook.ClientID = newBook.Client.ID;
 
-                unit.Complete();
-            }
+            unit.Books.Add(newBook);
+
+            unit.Complete();
+
         }
 
         private void button1_Click(object sender, EventArgs e)

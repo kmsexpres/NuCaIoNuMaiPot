@@ -15,19 +15,24 @@ namespace NuCaIoMaSinucid.UI
 {
     public partial class EcranListaClienti : Form
     {
-        public EcranListaClienti()
+        private readonly UnitOfWork unit;
+
+        private EcranListaClienti()
         {
             InitializeComponent();
         }
 
-        public EcranListaClienti(bool pornesteInserare)
+        public EcranListaClienti(UnitOfWork unit) : this()
+        {
+            this.unit = unit;
+        }
+
+        public EcranListaClienti(UnitOfWork unit, bool pornesteInserare) : this(unit)
         {
             // in caz ca am dat click pe "client nou" din meniul principal
             // pornesc ecranu de clienti si apoi dau click pe inserare client nou
             // putina mizerie da merge i guess
-            InitializeComponent();
-            Thread.Sleep(300);
-            this.butClientNou.PerformClick();
+            butClientNou_Click(this, null);
         }
 
         private void EcranListaClienti_Load(object sender, EventArgs e)
