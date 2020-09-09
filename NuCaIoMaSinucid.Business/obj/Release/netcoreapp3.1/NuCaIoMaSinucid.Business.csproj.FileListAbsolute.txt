@@ -10,3 +10,15 @@ D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Business\obj\Release\netcorea
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.csproj.CopyComplete
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.dll
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.pdb
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.deps.json
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.dll
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.pdb
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.dll
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.pdb
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.csprojAssemblyReference.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.AssemblyInfoInputs.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.AssemblyInfo.cs
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.csproj.CoreCompileInputs.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.csproj.CopyComplete
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.dll
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Business\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Business.pdb

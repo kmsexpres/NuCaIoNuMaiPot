@@ -59,7 +59,7 @@
             this.boxNume.Location = new System.Drawing.Point(123, 52);
             this.boxNume.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxNume.Name = "boxNume";
-            this.boxNume.Size = new System.Drawing.Size(293, 29);
+            this.boxNume.Size = new System.Drawing.Size(295, 29);
             this.boxNume.TabIndex = 1;
             // 
             // label2
@@ -80,7 +80,7 @@
             this.boxPrenume.Location = new System.Drawing.Point(123, 85);
             this.boxPrenume.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxPrenume.Name = "boxPrenume";
-            this.boxPrenume.Size = new System.Drawing.Size(293, 29);
+            this.boxPrenume.Size = new System.Drawing.Size(295, 29);
             this.boxPrenume.TabIndex = 3;
             // 
             // label3
@@ -101,7 +101,7 @@
             this.boxTelefon.Location = new System.Drawing.Point(123, 118);
             this.boxTelefon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxTelefon.Name = "boxTelefon";
-            this.boxTelefon.Size = new System.Drawing.Size(293, 29);
+            this.boxTelefon.Size = new System.Drawing.Size(295, 29);
             this.boxTelefon.TabIndex = 5;
             // 
             // label4
@@ -116,21 +116,22 @@
             // 
             // boxAdresa
             // 
-            this.boxAdresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.boxAdresa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.boxAdresa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.boxAdresa.Location = new System.Drawing.Point(123, 151);
             this.boxAdresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boxAdresa.Multiline = true;
             this.boxAdresa.Name = "boxAdresa";
-            this.boxAdresa.Size = new System.Drawing.Size(292, 62);
+            this.boxAdresa.Size = new System.Drawing.Size(294, 86);
             this.boxAdresa.TabIndex = 7;
             // 
             // butInapoi
             // 
             this.butInapoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.butInapoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.butInapoi.Location = new System.Drawing.Point(18, 239);
+            this.butInapoi.Location = new System.Drawing.Point(18, 263);
             this.butInapoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.butInapoi.Name = "butInapoi";
             this.butInapoi.Size = new System.Drawing.Size(110, 30);
@@ -143,7 +144,7 @@
             // 
             this.butAdaugaClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.butAdaugaClient.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.butAdaugaClient.Location = new System.Drawing.Point(257, 235);
+            this.butAdaugaClient.Location = new System.Drawing.Point(259, 259);
             this.butAdaugaClient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.butAdaugaClient.Name = "butAdaugaClient";
             this.butAdaugaClient.Size = new System.Drawing.Size(158, 39);
@@ -166,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 297);
+            this.ClientSize = new System.Drawing.Size(439, 321);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.butAdaugaClient);
             this.Controls.Add(this.butInapoi);
@@ -179,7 +180,7 @@
             this.Controls.Add(this.boxNume);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(453, 336);
+            this.MinimumSize = new System.Drawing.Size(455, 360);
             this.Name = "ecranClientNou";
             this.Text = "ecranClientNou";
             this.ResumeLayout(false);

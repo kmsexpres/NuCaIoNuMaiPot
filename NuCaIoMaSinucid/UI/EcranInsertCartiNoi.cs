@@ -1,4 +1,5 @@
-﻿using NuCaIoMaSinucid.Business.UnitOfWorkLogic;
+﻿using Microsoft.Data.SqlClient;
+using NuCaIoMaSinucid.Business.UnitOfWorkLogic;
 using NuCaIoMaSinucid.Data;
 using NuCaIoMaSinucid.Data.Entities;
 using System;
@@ -25,16 +26,17 @@ namespace NuCaIoMaSinucid.UI
             this.unit = unit;
         }
 
-        private void EcranInsertCartiNoi_Load(object sender, EventArgs e)
-        {
-        }
-
         private void butFinishBook_Click(object sender, EventArgs e)
         {
             // dau click pe 'adauga' si inserez ce scrie in casute in baza de date
 
             // preiau datele din casute si le golesc
-            var ID = int.Parse(this.boxCodInventar.Text);
+            if(this.boxCodInventar.Text == string.Empty)
+            {
+                this.boxDetaliiCarte.Text = "Trebuie introdus un cod de inventar";
+                return;
+            }
+            var ID = int.Parse(this.boxCodInventar?.Text);
             this.boxCodInventar.Text = String.Empty;
 
             var titlu = this.boxTitlu.Text;
@@ -51,18 +53,28 @@ namespace NuCaIoMaSinucid.UI
             var dataImprumut = DateTime.MaxValue;
             var dataReturnare = DateTime.MinValue;
 
+            try
+            {
+                var newBook = new Book(ID, titlu, autor, detalii)
+                {
+                    EsteImprumutata = esteImprumutata,
+                    DataImprumut = dataImprumut,
+                    DataReturnare = dataReturnare,
+                    Client = unit.Clients.GetById(1)
+                };
+                newBook.ClientID = newBook.Client.ID;
 
-            var newBook = new Book(ID, titlu, autor, detalii);
-            newBook.EsteImprumutata = esteImprumutata;
-            newBook.DataImprumut = dataImprumut;
-            newBook.DataReturnare = dataReturnare;
-            newBook.Client = unit.Clients.GetById(1);
-            newBook.ClientID = newBook.Client.ID;
-
-            unit.Books.Add(newBook);
-
-            unit.Complete();
-
+                unit.Books.Add(newBook);
+                unit.Complete();
+            }
+            catch(ArgumentException argEx)
+            {
+                this.boxDetaliiCarte.Text = argEx.Message;
+            }
+            catch(SqlException sqlEx)
+            {
+                this.boxDetaliiCarte.Text = sqlEx.Message;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

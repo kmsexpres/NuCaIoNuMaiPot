@@ -120,3 +120,4 @@ D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\Nu
 D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.dll
 D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.pdb
 D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.genruntimeconfig.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Debug\netcoreapp3.1\NuCaIoMaSinucid.UI.AlegereClient.resources

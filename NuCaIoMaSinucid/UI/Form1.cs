@@ -38,6 +38,8 @@ namespace NuCaIoMaSinucid
 
             this.cutieListaCarti.Items.Clear();
 
+            lista = lista.OrderBy(carte => carte.Autor)
+                .ThenBy(carte => carte.Titlu);
             foreach (var carte in lista)
             {
                 this.cutieListaCarti.Items
@@ -59,7 +61,10 @@ namespace NuCaIoMaSinucid
         private void cutieListaCarti_SelectedIndexChanged(object sender, EventArgs e)
         {
             // citesc stringu afisat ca sa aflu ce carte iau din bd
-            var item = this.cutieListaCarti.SelectedItem.ToString();
+            var item = this.cutieListaCarti.SelectedItem?.ToString();
+            if (item is null)
+                return;
+
             var bookID = int.Parse(item.Replace(".", "").Split(" ")[0]);
 
             // iau datele
@@ -79,6 +84,11 @@ namespace NuCaIoMaSinucid
                 $"Se afla la {carte.Client.Nume} {carte.Client.Prenume}" + Environment.NewLine +
                 $"{temp}" +
                 $"Detalii despre carte:" + Environment.NewLine + $"{carte.Detalii}";
+
+            // reglez butonu de imprumut, daca e ocupata cartea il dezactivez
+            if (carte.EsteImprumutata)
+                this.butImprumutaCarte.Visible = false;
+            else this.butImprumutaCarte.Visible = true;
         }
 
         private void butInsertCarte_Click(object sender, EventArgs e)
@@ -149,6 +159,18 @@ namespace NuCaIoMaSinucid
             unit.Complete();
 
             umpleCutieListaCartiCu(listaIntarziate);
+        }
+
+        private void butImprumutaCarte_Click(object sender, EventArgs e)
+        {
+            var item = this.cutieListaCarti.SelectedItem?.ToString();
+            if (item is null)
+                return;
+
+            var bookID = int.Parse(item.Replace(".", "").Split(" ")[0]);
+
+            var ecranImprumutCarte = new AlegereClient(unit, bookID);
+            ecranImprumutCarte.Show();
         }
     }
 }

@@ -52,5 +52,10 @@ namespace NuCaIoMaSinucid.Data.Entities.NewFolder
         {
             this.entities.RemoveRange(entities);
         }
+
+        public void Update(T entity)
+        {
+            this.entities.Update(entity);
+        }
     }
 }

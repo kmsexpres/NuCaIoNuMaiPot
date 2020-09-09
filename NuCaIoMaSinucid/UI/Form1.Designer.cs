@@ -136,6 +136,7 @@ namespace NuCaIoMaSinucid
             this.butImprumutaCarte.TabIndex = 6;
             this.butImprumutaCarte.Text = "Imprumuta cartea selectata";
             this.butImprumutaCarte.UseVisualStyleBackColor = true;
+            this.butImprumutaCarte.Click += new System.EventHandler(this.butImprumutaCarte_Click);
             // 
             // radButLibere
             // 

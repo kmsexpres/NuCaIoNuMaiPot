@@ -10,3 +10,15 @@ D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.dll
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.pdb
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.genruntimeconfig.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.deps.json
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.runtimeconfig.json
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.runtimeconfig.dev.json
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.dll
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\bin\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.pdb
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.csprojAssemblyReference.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.AssemblyInfoInputs.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.AssemblyInfo.cs
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.csproj.CoreCompileInputs.cache
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.dll
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.pdb
+D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid.Data\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.Data.genruntimeconfig.cache
