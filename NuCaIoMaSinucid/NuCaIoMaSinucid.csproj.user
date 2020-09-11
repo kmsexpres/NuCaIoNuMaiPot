@@ -7,6 +7,9 @@
     <Compile Update="UI\AlegereClient.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\ErrorScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

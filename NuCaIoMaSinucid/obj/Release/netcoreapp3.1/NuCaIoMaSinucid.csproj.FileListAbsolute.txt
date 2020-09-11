@@ -121,3 +121,4 @@ D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\
 D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.pdb
 D:\miscVisStudProjects\NuCaIoNuMaiPot\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.genruntimeconfig.cache
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.UI.AlegereClient.resources
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\NuCaIoMaSinucid.UI.ErrorScreen.resources

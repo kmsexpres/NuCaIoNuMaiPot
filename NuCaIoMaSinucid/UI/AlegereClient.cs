@@ -52,6 +52,7 @@ namespace NuCaIoMaSinucid.UI
             unit.Books.Update(carteAdev);
             // doamne ajuta poate merge
 
+            this.boxInfoClient.Text = "A fost imprummutata cu succes, spor la citit!";
         }
 
         private void AlegereClient_Load(object sender, EventArgs e)
