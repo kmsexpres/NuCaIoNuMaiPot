@@ -86,9 +86,17 @@ namespace NuCaIoMaSinucid
                 $"Detalii despre carte:" + Environment.NewLine + $"{carte.Detalii}";
 
             // reglez butonu de imprumut, daca e ocupata cartea il dezactivez
+            // si il activez pe ala de returnat
             if (carte.EsteImprumutata)
+            {
                 this.butImprumutaCarte.Visible = false;
-            else this.butImprumutaCarte.Visible = true;
+                this.butReturnCarte.Visible = true;
+            }
+            else
+            {
+                this.butImprumutaCarte.Visible = true;
+                this.butReturnCarte.Visible = false;
+            }
         }
 
         private void butInsertCarte_Click(object sender, EventArgs e)
@@ -171,6 +179,32 @@ namespace NuCaIoMaSinucid
 
             var ecranImprumutCarte = new AlegereClient(unit, bookID);
             ecranImprumutCarte.Show();
+        }
+
+        private void butReturnCarte_Click(object sender, EventArgs e)
+        {
+            // iau cartea selectata si o marchez ca fiind la biblioteca
+
+            var item = this.cutieListaCarti.SelectedItem?.ToString();
+            if (item is null)
+                return;
+
+            var bookID = int.Parse(item.Replace(".", "").Split(" ")[0]);
+
+            var actualCarte = unit.Books.GetById(bookID);
+            actualCarte.EsteImprumutata = false;
+            actualCarte.ClientID = 1; // cam brutal dar csf
+            actualCarte.Client = unit.Clients.GetById(actualCarte.ClientID);
+            actualCarte.DataImprumut = DateTime.Now;
+            actualCarte.DataReturnare = DateTime.MaxValue;
+
+            unit.Books.Update(actualCarte);
+            unit.Complete();
+
+            // redesenez
+            var bookList = unit.Books.GetAll().ToList();
+            umpleCutieListaCartiCu(bookList);
+            this.cutieListaCarti.SelectedIndex = 0;
         }
     }
 }

@@ -5721,19 +5721,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bogdan.toderica\\.nuget\\packages\\": {}
+    "C:\\Users\\Bobel\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
+      "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
       "projectName": "NuCaIoMaSinucid",
-      "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
-      "packagesPath": "C:\\Users\\bogdan.toderica\\.nuget\\packages\\",
-      "outputPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\obj\\",
+      "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
+      "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+      "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\bogdan.toderica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5746,8 +5750,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
-              "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj"
+            "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
+              "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj"
             }
           }
         }

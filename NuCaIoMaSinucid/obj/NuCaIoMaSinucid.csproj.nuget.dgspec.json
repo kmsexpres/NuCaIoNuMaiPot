@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj": {}
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj": {}
   },
   "projects": {
-    "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
+        "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
         "projectName": "NuCaIoMaSinucid.Business",
-        "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
-        "packagesPath": "C:\\Users\\bogdan.toderica\\.nuget\\packages\\",
-        "outputPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\obj\\",
+        "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj",
+        "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bogdan.toderica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
-                "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj"
+              "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
+                "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj"
               }
             }
           }
@@ -60,17 +63,20 @@
         }
       }
     },
-    "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+        "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
         "projectName": "NuCaIoMaSinucid.Data",
-        "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
-        "packagesPath": "C:\\Users\\bogdan.toderica\\.nuget\\packages\\",
-        "outputPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\obj\\",
+        "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+        "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bogdan.toderica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,17 +134,20 @@
         }
       }
     },
-    "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj": {
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
+        "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
         "projectName": "NuCaIoMaSinucid",
-        "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
-        "packagesPath": "C:\\Users\\bogdan.toderica\\.nuget\\packages\\",
-        "outputPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid\\obj\\",
+        "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\NuCaIoMaSinucid.csproj",
+        "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bogdan.toderica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -151,8 +160,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
-                "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj"
+              "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj": {
+                "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Business\\NuCaIoMaSinucid.Business.csproj"
               }
             }
           }

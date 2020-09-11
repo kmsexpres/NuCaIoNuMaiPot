@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {}
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {}
   },
   "projects": {
-    "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
+    "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+        "projectUniqueName": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
         "projectName": "NuCaIoMaSinucid.Data",
-        "projectPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
-        "packagesPath": "C:\\Users\\bogdan.toderica\\.nuget\\packages\\",
-        "outputPath": "D:\\miscVisStudProjects\\NuCaIoNuMaiPot\\NuCaIoMaSinucid.Data\\obj\\",
+        "projectPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\NuCaIoMaSinucid.Data.csproj",
+        "packagesPath": "C:\\Users\\Bobel\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgVisStud2019\\NuCaIoMaSinucid\\NuCaIoMaSinucid.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bogdan.toderica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bobel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,12 +66,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[3.1.7, 3.1.7]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x86",
+              "version": "[3.1.7, 3.1.7]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+              "version": "[3.1.7, 3.1.7]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
         }
       }
     }
