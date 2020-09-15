@@ -547,3 +547,4 @@ D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\win
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\win-x86\NuCaIoMaSinucid.dll
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\win-x86\NuCaIoMaSinucid.pdb
 D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\win-x86\NuCaIoMaSinucid.genruntimeconfig.cache
+D:\ProgVisStud2019\NuCaIoMaSinucid\NuCaIoMaSinucid\obj\Release\netcoreapp3.1\win-x86\NuCaIoMaSinucid.UI.ErrorScreen.resources
