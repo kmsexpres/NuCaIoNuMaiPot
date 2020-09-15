@@ -120,5 +120,42 @@ namespace NuCaIoMaSinucid.UI
                 this.cutieListaClienti.Items.Add(clientInfo);
             }
         }
+
+        private void cutieListaClienti_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            // la dublu click se sterge
+
+            var item = this.cutieListaClienti.SelectedItem?.ToString();
+            if (item is null)
+                return;
+
+            // aflu toate datele clientului
+            var clientID = int.Parse(item.Replace(".", "").Split(" ")[0]);
+
+            if (clientID == 1) return; // in caz ca o apasat gresit pe biblioteca, 
+                                       // nu poate fi stearsa
+
+            var client = unit.Clients.GetById(clientID);
+            client.CartiImprumutate = unit.Books.GetAll()
+                .Where(book => book.ClientID == clientID).ToList();
+            
+
+            // mai intai eliberez toate cartile (banuiesc ca asta se doreste)
+
+            foreach(var book in client.CartiImprumutate)
+            {
+                book.EsteImprumutata = false;
+                book.ClientID = 1;
+                book.DataReturnare = DateTime.Today;
+                book.DataImprumut = DateTime.MaxValue;
+
+                unit.Books.Update(book);
+            }
+
+            unit.Clients.Remove(client);
+            unit.Complete();
+
+            butRefreshListaClienti_Click(null, null);
+        }
     }
 }

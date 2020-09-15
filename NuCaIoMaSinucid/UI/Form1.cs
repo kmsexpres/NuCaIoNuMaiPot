@@ -69,7 +69,8 @@ namespace NuCaIoMaSinucid
 
             // iau datele
             var carte = unit.Books.GetById(bookID);
-            carte.Client = unit.Clients.GetById(carte.ClientID);
+            carte.Client = unit.Clients?.GetById(carte.ClientID);
+          
             unit.Complete();
 
             // le afisez in cutia de jos
